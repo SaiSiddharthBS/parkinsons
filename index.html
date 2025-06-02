@@ -41,7 +41,7 @@
       100% { background-position: 100% 50%; }
     }
     header img {
-      height: 180px;
+      height: 100px;
       margin-bottom: 25px;
       animation: fadeIn 2s ease, pulse 4s ease-in-out infinite;
       filter: drop-shadow(0 0 15px rgba(0, 225, 255, 0.6));
@@ -476,18 +476,6 @@
       border-color: rgba(0, 225, 255, 0.3);
       transform: scale(0.98);
     }
-    .click-here {
-  display: block;
-  font-size: 14px;
-  color: #00e1ff;
-  margin-top: 10px;
-  font-weight: 600;
-  text-decoration: underline;
-  transition: all 0.3s ease;
-}
-.login-box:hover .click-here {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(0, 225, 255, 0.8);
     /* Floating particles for visual appeal */
     .particle {
       position: fixed;
@@ -527,7 +515,7 @@
 
 <header>
   <img src="images/logo.png" alt="App Logo">
-  <h1>Parkinson's Detection</h1>
+  <h1>Parkinson's Detection Application</h1>
   <p>Revolutionizing Early Diagnosis through ML-Powered Insights</p>
 </header>
 
@@ -564,12 +552,10 @@
     <div class="login-box" id="doctor-login-box" onclick="activateLogin('doctor')">
       <h3>Doctor Login</h3>
       <p>Access advanced patient analytics and reporting tools</p>
-      <span class="click-here">Click here</span>
     </div>
     <div class="login-box" id="patient-login-box" onclick="activateLogin('patient')">
       <h3>Patient Login</h3>
       <p>View your test results and track your progress</p>
-      <span class="click-here">Click here</span>
     </div>
   </div>
 
